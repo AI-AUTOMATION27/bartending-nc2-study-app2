@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NC II Questionnaire Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">NC II Reviewer</p>
+          <h1>Bar Operations Quiz</h1>
+        </div>
+        <div class="score-pill" aria-live="polite">
+          <span id="answeredCount">0</span>/<span id="totalCount">25</span>
+          answered
+        </div>
+      </header>
+
+      <section class="status-panel" aria-label="Quiz status">
+        <div>
+          <span class="status-label">Progress</span>
+          <div class="progress-track">
+            <div id="progressBar" class="progress-fill"></div>
+          </div>
+        </div>
+        <div id="resultBox" class="result-box">
+          Answer the questions, then submit to see your score.
+        </div>
+      </section>
+
+      <nav id="sectionTabs" class="section-tabs" aria-label="Question sections"></nav>
+
+      <section id="questionList" class="question-list" aria-label="Questions"></section>
+
+      <footer class="actions">
+        <button id="resetButton" class="button secondary" type="button">Reset</button>
+        <button id="submitButton" class="button primary" type="button">Submit Answers</button>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
